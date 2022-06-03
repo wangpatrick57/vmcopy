@@ -1,9 +1,0 @@
-#!/bin/bash
-VMCOPY_PATH=$HOME/vmcopy
-rm $VMCOPY_PATH/*
-cp $1 $VMCOPY_PATH
-cd $VMCOPY_PATH
-git add -A
-git commit -m "copy"
-git push
-cd -
