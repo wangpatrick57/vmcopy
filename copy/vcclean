@@ -1,0 +1,11 @@
+#!/bin/bash
+VMCOPY_PATH=$HOME/vmcopy
+COPY_DIR=copy
+cd $VMCOPY_PATH
+echo $COPY_DIR
+rm -rf $VMCOPY_PATH/$COPY_DIR # full path just to be safer
+mkdir $COPY_DIR
+git add -A
+git commit -m "copy"
+git push
+cd -
