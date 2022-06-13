@@ -1,0 +1,4 @@
+#!/bin/bash
+find=$1
+replace=$2
+find . -type f -print0 | xargs -0 sed -i'' -e "s/$find/$replace/g"
